@@ -1,9 +1,10 @@
+import Hero from './widget/Hero'
+
 function App() {
   return (
-    <div className="text-orange-50 bg-amber-950">
-      App
-      <h1 className="font-zentry">font-zentry</h1>
-    </div>
+    <main className="relative min-h-screen w-screen overflow-x-hidden">
+      <Hero />
+    </main>
   )
 }
 
