@@ -2,12 +2,12 @@ import React from 'react'
 
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/all'
+// import { ScrollTrigger } from 'gsap/all'
 import { TiLocationArrow } from 'react-icons/ti'
 
 import { Button } from '@/components'
 
-gsap.registerPlugin(ScrollTrigger)
+// gsap.registerPlugin(ScrollTrigger)
 
 const Hero = () => {
   const [currentIndex, setCurrentIndex] = React.useState(1)
@@ -45,9 +45,7 @@ const Hero = () => {
           height: '100%',
           duration: 1,
           ease: 'power1.inOut',
-          onStart: nexVideoRef
-            ? () => (nexVideoRef.current ? nexVideoRef.current.play() : undefined)
-            : undefined,
+          onStart: nexVideoRef.current ? () => nexVideoRef.current?.play() : undefined,
         })
 
         gsap.from('#current-video', {
