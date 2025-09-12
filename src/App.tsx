@@ -1,10 +1,11 @@
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
 
-import { NavBar } from './layout'
+import { Footer, NavBar } from './layout'
 import About from './widget/About'
 import Feature from './widget/Feature'
 import Hero from './widget/Hero'
+import Story from './widget/Story'
 
 function App() {
   gsap.registerPlugin(ScrollTrigger)
@@ -15,8 +16,8 @@ function App() {
       <Hero />
       <About />
       <Feature />
-
-      <section className="min-h-screen z-0 bg-blue-400"></section>
+      <Story />
+      <Footer />
     </main>
   )
 }
