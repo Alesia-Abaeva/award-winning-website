@@ -3,6 +3,7 @@ import { ScrollTrigger } from 'gsap/all'
 
 import { Footer, NavBar } from './layout'
 import About from './widget/About'
+import Contact from './widget/Contact'
 import Feature from './widget/Feature'
 import Hero from './widget/Hero'
 import Story from './widget/Story'
@@ -17,6 +18,7 @@ function App() {
       <About />
       <Feature />
       <Story />
+      <Contact />
       <Footer />
     </main>
   )
