@@ -3,6 +3,7 @@ import { ScrollTrigger } from 'gsap/all'
 
 import { NavBar } from './layout'
 import About from './widget/About'
+import Feature from './widget/Feature'
 import Hero from './widget/Hero'
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <NavBar />
       <Hero />
       <About />
+      <Feature />
 
       <section className="min-h-screen z-0 bg-blue-400"></section>
     </main>
